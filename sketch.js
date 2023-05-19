@@ -70,17 +70,17 @@ function draw() {
     }else if(jewelryG.isTouching(boy)) {
       jewelryG.destroyEach();
 
-       treasureCollection=+ 150;
+      //treasureCollection=+ 150;
       // treasureCollection= 150;
       // treasureCollection= treasureCollection - 150;
-      // treasureCollection= treasureCollection + 150;
+       treasureCollection= treasureCollection + 150;
       
     }else{
       if(swordGroup.isTouching(boy)) {
         gameState=END;
         
-        boy.addAnimation(endImg);
-        // boy.addAnimation("SahilRunning",endImg);
+        //boy.addAnimation(endImg);
+         boy.addAnimation("SahilRunning",endImg);
         // boy.addAnimation("SahilRunning");
         // boy.addAnimation(SahilRunning,endImg);
 
